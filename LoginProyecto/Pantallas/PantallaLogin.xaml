@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginProyecto.Pantallas.PantallaLogin"
+             Title="Login"
+             BackgroundColor="Gray">
+    <ContentPage.Content>
+        <StackLayout Margin="0,40,0,0">
+            <Label Text="Iniciar Sesion" TextColor="DarkRed" HorizontalOptions="CenterAndExpand" FontSize="20"></Label>
+            <Frame BackgroundColor="Transparent">
+                <Label Text="Aqui va imagen"></Label>
+            </Frame>
+            <Label Text="Ingrese Correo electronico" TextColor="black" HorizontalOptions="FillAndExpand" FontSize="18" BackgroundColor="Transparent" Margin="10,2,1,0"></Label>
+            <Entry x:Name="txtCorreo" TextColor="black" BackgroundColor="LightGray" FontSize="Medium" Placeholder="Ingrese su correo" PlaceholderColor="Gray" Keyboard="Email" MaxLength="150" Margin="9,2,20,0"></Entry>
+            <Label Text="Ingrese contraseña" TextColor="Black" HorizontalOptions="FillAndExpand" FontSize="18" BackgroundColor="Transparent" Margin="10,2,1,0"></Label>
+            <Entry x:Name="txtContra" TextColor="black" BackgroundColor="LightGray" FontSize="Medium" Placeholder="Ingrese su contraseña" PlaceholderColor="Gray" Keyboard="Text" IsPassword="True" MaxLength="150" Margin="9,2,20,0"></Entry>
+            <CheckBox x:Name="mostrar" Color="black" IsChecked="False" Margin="20,0,70,0" CheckedChanged="mostrar_CheckedChanged"></CheckBox>
+            <Button x:Name="btnclave" Text="Olvidastes la contraseña" TextColor="DarkRed" FontAttributes="Bold" BackgroundColor="Transparent" FontSize="16" BorderColor="Transparent" Clicked="btnclave_Clicked"></Button>
+            <Button x:Name="btnIniciar" Text="Iniciar Sesion" TextColor="black" BackgroundColor="White" FontSize="14" Margin="10,20,20,10" HorizontalOptions="Center" Clicked="btnIniciar_Clicked"></Button>
+            <Button x:Name="btnCrear" Text="Crear Cuenta" TextColor="black" BackgroundColor="White" FontSize="14" Margin="10,5,20,20" HorizontalOptions="Center" Clicked="btnCrear_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

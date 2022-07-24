@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginProyecto.Pantallas.Verificado"
+             Title="Cuenta verificada"
+             BackgroundColor="Gray">
+    <ContentPage.Content>
+        <StackLayout Margin="0,220,0,0">
+            <Label Text="Su cuenta ya se encuentra verificada" TextColor="black" FontSize="Large" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Margin="20,0,10,0"></Label>
+            <Label Text="Sea bienvenido a la aplicacion disfrute de una buena experiencia" TextColor="Black" FontSize="Large" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Margin="20,0,10,0"></Label>
+            <Button x:Name="btnregreso" Text="Regresar al login" BackgroundColor="white" TextColor="black" BorderColor="Black" Clicked="btnregreso_Clicked" Margin="60,30,70,0"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

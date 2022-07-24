@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginProyecto.Pantallas.CrearUsuario"
+             Title="Crear Usuario"
+             BackgroundColor="Gray">
+    
+    <ScrollView Margin="0,20,0,0">
+        <StackLayout>
+            <Button x:Name="btncancelar"   Text="Cancelar" BackgroundColor="white" TextColor="Black" HorizontalOptions="Start" Clicked="btncancelar_Clicked" Margin="5,0,0,0"></Button>
+            <Label Text="Crear Usuario" TextColor="DarkRed" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0" FontSize="Title" FontAttributes="Bold"></Label>
+            <Frame  BackgroundColor="#EBCD87" BorderColor="#54CA3F" Padding="0,0,0,0" HasShadow="True" Margin="50">
+                <Image x:Name="UbiImagen" HeightRequest="270" BackgroundColor="#FBEAC2" Aspect="Fill" />
+                
+            </Frame>
+
+            <Button x:Name="btnElegirimagen" Text="Seleccionar imagen" Clicked="btnElegirimagen_Clicked" BackgroundColor="white" TextColor="black"></Button>
+            
+            <Label Text="Ingrese Nombre Usuario" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,30,0,0"></Label>
+            <Entry x:Name="txtusuario" TextColor="Black" Placeholder="Ingrese usuario" PlaceholderColor="Gray" Keyboard="Text" FontSize="14" Margin="9,2,20,0" BackgroundColor="LightGray"></Entry>
+
+            <Label Text="Ingrese nombre" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium " Margin="0,5,0,0"></Label>
+            <Entry x:Name="txtnombre" TextColor="Black" Placeholder="Ingrese nombre" PlaceholderColor="Gray" Keyboard="Text" FontSize="14" Margin="9,2,20,0" BackgroundColor="LightGray"></Entry>
+            
+            <Label Text="Ingrese Apellido" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,10,0,0"></Label>
+            <Entry x:Name="txtapellido" TextColor="Black" Placeholder="Ingrese apellido" PlaceholderColor="Gray" Keyboard="Text" FontSize="14" Margin="9,2,20,0" BackgroundColor="LightGray"></Entry>
+
+            <Label Text="Ingrese Genero" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,5,0,0"></Label>
+            <Picker x:Name="btngenero" Title="Genero">
+            </Picker>
+            <Label Text="Ingrese Telefono" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,5,0,0"></Label>
+            <Entry x:Name="txttelefono" TextColor="Black" Placeholder="Ingrese Telefono Celular" PlaceholderColor="Gray" Keyboard="Numeric" FontSize="14" Margin="9,2,20,0" BackgroundColor="LightGray"></Entry>
+
+            <Label Text="Ingrese Ciudad" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,5,0,0"></Label>
+            <Entry x:Name="txtciudad" TextColor="Black" Placeholder="Ingrese ciudad" PlaceholderColor="Gray" Keyboard="Numeric" FontSize="14" Margin="9,2,20,0" BackgroundColor="LightGray"></Entry>
+
+            <Label Text="Ingrese Fecha De Nacimiento" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,5,0,0"></Label>
+            <DatePicker MinimumDate="01/01/1960"
+            MaximumDate="01/01/2012"
+            DateSelected="OnDateSelected" />
+            <Label Text="Ingrese Correo Electronico" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,5,0,0"></Label>
+            <Entry x:Name="txtcorreo" TextColor="Black" Placeholder="Ingrese correo" PlaceholderColor="Gray" Keyboard="Email" FontSize="14" Margin="9,2,20,0" BackgroundColor="LightGray"></Entry>
+
+            <Label Text="Ingrese contraseña" BackgroundColor="Transparent" TextColor="Black" HorizontalOptions="Center" FontSize="Medium" Margin="0,5,0,0"></Label>
+            <Entry x:Name="txtcontra" TextColor="Black" Placeholder="Ingrese contraseña" PlaceholderColor="Gray" Keyboard="Text" FontSize="14" Margin="9,2,20,0" BackgroundColor="LightGray"></Entry>
+          
+            <Button x:Name="btncrear" Text="Crear Cuenta" Background="white" TextColor="Black" HorizontalOptions="Center" Clicked="btncrear_Clicked" BorderColor="Black" FontAttributes="Bold" Margin="6,10,0,0"></Button>
+        
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
